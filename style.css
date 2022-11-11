@@ -24,11 +24,30 @@ body {
   font-style: italic;
 }
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 350px;
+  left: 250px;
+  width: 20%;
+}
+
 .hero {
   height: auto;
   max-width: 100%;
-  margin: auto;
-  align-content: center;
+  align-self: center;
+  margin: 2rem 3rem;
 }
 
 .button {
@@ -37,13 +56,15 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   margin-top: 5rem;
   margin-bottom: 6rem;
 }
 
 .button :hover {
-  color: #f08a4b;
+  background-color: #f08a4b;
+  border-radius: 100%;
+  fill: #fff;
 }
 
 img {
@@ -76,24 +97,47 @@ img {
 
 h1 {
   font-size: 4rem;
-  margin-left: 5%;
-  margin-top: 10%;
+  /* margin-left: 5%; */
+  margin-top: 15%;
+  margin-bottom: 5%;
 }
 
-p {
+.mail {
+  text-decoration: none;
+  color: #439775;
   font-size: 2rem;
-  color: #f08a4b;
-  margin-left: 5%;
 }
 
-/* .skill {
+.mail:hover {
+  color: #f08a4b;
+  font-style: italic;
+}
+
+.skill {
   float: right;
-  max-height: 15rem;
-} */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 0;
+  max-width: 60%;
+}
 
 .flex-container {
   display: flex;
-  margin: auto;
-  justify-content: space-evenly;
+  margin: 1rem;
+  justify-content: space-around;
   flex-direction: row;
+}
+
+.rotate {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
