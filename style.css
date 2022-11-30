@@ -213,4 +213,12 @@ video {
   .flexdiv {
     max-width: 100%;
   }
+
+  footer {
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top-style: double;
+    border-color: #439775;
+  }
 }
