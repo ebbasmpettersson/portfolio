@@ -4,41 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.bunny.net" />
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
       href="https://fonts.bunny.net/css?family=amaranth:400,400i"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=dm-sans:400,500,700"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="menu">
-      <a href="#home">Home</a>
-      <a href="#case">Case</a>
+      <a href="index.html">Hem</a>
+      <a href="#kontakt">Kontakt</a>
     </div>
     <div>
-      <img class="hero image1" src="img/Hero.png" width="90%" alt="Ebba">
-      <img class="image2 rotate" src="img/skill.png" alt="skill">
-        <div><button class="button"><img src="svg/arrow.svg" alt="Se mer"></button></div>
+      <img class="hero image1" src="img/Hero.png" width="90%" alt="Ebba" />
+      <img class="image2 rotate" src="img/skill.png" alt="skill" />
+      <div>
+        <a class="arrow" href="#buddi"
+          ><img src="svg/arrow.svg" alt="Scroll down"
+        /></a>
+      </div>
+      <!-- header -->
+      <div class="container buddi" id="buddi">
+        <img src="img/buddi.mockup.png" alt="Buddi" />
+        <a class="btn" href="buddi.html">Läs mer om Buddi</a>
       </div>
       <div class="container">
-        <img src="img/buddi.text.png" alt="Buddi">
-        <button class="btn">Läs mer</button>
+        <img src="img/wops.png" alt="Wops" />
+        <a class="btn" href="wops.html">Läs mer om Wops</a>
       </div>
       <div class="container">
-        <img src="img/wops.text.png" alt="Wops">
-        <button class="btn">Läs mer</button>
+        <img src="img/Portrait.png" alt="T1D-Guide" />
+        <a class="btn" href="type.html">Läs mer om T1D-Guide</a>
       </div>
       <div class="container">
-        <img src="img/roomy.text.png" alt="Roomy">
-        <button class="btn">Läs mer</button>
+        <img src="img/mockup.png" alt="Roomy" />
+        <a class="btn" href="roomy.html">Läs mer Roomy</a>
       </div>
     </div>
-    <section class="flex-container">
-      <div><footer><h1>Let's get in touch!</h1>
-    <p><a class="mail" href="mailto: ebbasmpettersson@gmail.com">ebbasmpettersson@gmail.com </a></p></footer></div>
-    <div><img class="skill rotate" src="img/skill.png" width="70%" alt="Skills"></div></section>
+    <!-- Content -->
+
+    <footer>
+      <div>
+        <h1>Let's get in touch!</h1>
+        <h2>
+          <a class="mail" id="kontakt" href="mailto: ebbasmpettersson@gmail.com"
+            >ebbasmpettersson@gmail.com
+          </a>
+        </h2>
+        <p>
+          eller skicka ett meddelande till mig på LinkedIn
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/ebba-pettersson-a8451919a/"
+            >här!</a
+          >
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="skill rotate"
+          src="img/skill.png"
+          width="70%"
+          alt="Skills"
+        />
+      </div>
+    </footer>
   </body>
 </html>
